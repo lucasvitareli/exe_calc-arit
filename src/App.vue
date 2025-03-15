@@ -63,14 +63,14 @@ function calculate() {
           </p>
         </div>
         <div class="values">
-          <input type="number" id="value1" placeholder="0" required v-model="state.value1" @input="calculate">  <!-- @input serve para atualizar o valor do input -->
-          <select id="operation" v-model="state.operation" @change="calculate"> 
+          <input type="number" id="value1" placeholder="0" required v-model="state.value1" @input="getNumber1">  <!-- @input serve para atualizar o valor do input -->
+          <select id="operation" v-model="state.operation" @change="getOperation"> 
             <option value="sum">+</option>
             <option value="sub">-</option>
             <option value="mul">*</option>
             <option value="div">/</option>
           </select>
-          <input type="number" id="value2" placeholder="0" required v-model="state.value2" @input="calculate">
+          <input type="number" id="value2" placeholder="0" required v-model="state.value2" @input="getNumber2">
         </div>
       </div>
     </div>
